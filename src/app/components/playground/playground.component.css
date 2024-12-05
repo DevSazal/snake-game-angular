@@ -1,0 +1,30 @@
+.board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-rows: repeat(20, 20px);
+    grid-template-columns: repeat(20, 20px);
+    gap: 1px;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+}
+
+.cell.snake {
+    background-color: #a29bfe;
+}
+
+.cell.snake-head {
+    background-color: #6c5ce7;
+}
+
+.cell.food {
+    background-color: #ff7675;
+}

@@ -1,1 +1,17 @@
-<p>playground works!</p>
+<div class="board-container">
+  <div class="board">
+    <div
+      *ngFor="let row of [].constructor(20); let y = index"
+      class="row"
+    >
+      <div
+        *ngFor="let col of [].constructor(20); let x = index"
+        class="cell"
+        [class.snake]="isSnakeSegment(x, y)"
+        [class.snake-head]="isSnakeHead(x, y)"
+        [class.food]="isFood(x, y)"
+      ></div>
+    </div>
+  </div>
+</div>
+

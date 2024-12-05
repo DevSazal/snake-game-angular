@@ -1,1 +1,13 @@
-<p>game works!</p>
+<div class="container mt-4">
+    <p class="score">Score: {{ score }}</p>
+    <p class="timer">Time Remaining: {{ remainingTime }}s</p>
+
+    <div class="playground">
+        <app-playground
+        [snake]="gameService.snake"
+        [food]="gameService.food"
+        (directionChange)="onDirectionChange($event)"
+        ></app-playground>
+    </div>
+  </div>
+

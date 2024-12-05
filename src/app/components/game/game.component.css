@@ -1,0 +1,14 @@
+.score {
+    color: #00b894;
+    font-weight: bold;
+}
+
+.timer {
+    color: #636e72;
+    font-weight: bold;
+}
+
+.playground.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
