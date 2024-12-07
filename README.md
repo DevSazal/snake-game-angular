@@ -1,46 +1,93 @@
 # Snake Game
 
-This project was developed on angular 19.0.1.
+The game was developed on angular 19.0.1.
 
-## Development server
+
+<br>
+
+Let's clone the repository on your machine.
+
+The application includes the following files and folders:
+
+```bash
+# architecture
+# deep drive
+
+todo-app/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── game/  # container component
+│   │   │   │   ├── game.component.html
+│   │   │   │   ├── game.component.css
+│   │   │   │   └── game.component.ts
+│   │   │   │
+│   │   │   ├── playground/  # presentation component
+│   │   │   │   ├── playground.component.html
+│   │   │   │   ├── playground.component.css
+│   │   │   │   └── playground.component.ts
+│   │   │   │
+│   │   ├── models/
+│   │   │   ├── food.model.ts
+│   │   │   └── snake.model.ts
+│   │   │   │
+│   │   ├── services/
+│   │   │   ├── game.service.ts
+│   │   │   └── score.service.ts  # use localStorage
+│   │   │
+│   │   ├── app.component.html
+│   │   ├── app.component.css
+│   │   ├── app.component.ts
+│   │   ├── app.config.ts
+│   │   └── app.routes.ts
+│   │
+│   ├── styles.css
+│   ├── index.html
+│   └── main.ts
+│
+├── angular.json
+├── package.json
+├── tsconfig.json
+└── README.md
+
+```
+
+
+## Installation and Configuration
+
+Let's move to the cloned directory with your terminal.
+
+To install, build, and start the application for the first time, run the following commands:
+
+```bash
+npm install
+```
+<br>
+
+Already done? Cool! You are almost ready to enjoy the game ⛳️🐟🐍
+
+### Build & Run:
 
 To start a local development server, run:
 
 ```bash
 ng serve
+
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Once the server is running, open your browser and navigate to `http://localhost:4200/`
 
-## Building
 
-To build the project run:
+### Game Rules:
 
-```bash
-ng build
-```
+* 15 seconds timer to collect food or game over
+* Game over if the snake hits the playground walls
+* Game over if snake's head collides with the body
+* Just move in the playground and grow by collecting food
+* Keyboard control: `ArrowUp`, `ArrowDown`, `ArrowLeft`, `ArrowRight`
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Stay in touch
+## 🧑‍💻 Stay in touch
 
 - Author - [Sazal Ahamed](https://sazal.vercel.app)
 - Linkedin - [Profie](https://www.linkedin.com/in/sazal-ahamed/)
@@ -48,4 +95,4 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 ## License
 
-[MIT licensed](LICENSE) © 2023
+[MIT licensed](LICENSE) © 2024
