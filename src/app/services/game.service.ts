@@ -71,6 +71,16 @@ export class GameService {
     if (direction === 'ArrowLeft') head.y--;
     if (direction === 'ArrowRight') head.y++;
 
+    // prevent reverse direction
+    const previousSegment = this.snake[1];
+    if (
+      this.snake.length > 1 &&
+      previousSegment.x === head.x &&
+      previousSegment.y === head.y
+    ) {
+      return true; // ignore reverse direction
+    }
+
     // Check for collision with borders
     if (
       head.x < 0 ||
