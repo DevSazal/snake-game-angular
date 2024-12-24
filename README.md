@@ -1,7 +1,12 @@
+<p align="center">
+<img width="55%" alt="Snake Game - Angular By DevSazal" src="https://github.com/user-attachments/assets/6eb62631-a0e1-4487-b96b-58500039d844" />
+</p>
+
+<br>
+
 # Snake Game
 
 The game was developed on angular 19.0.1.
-
 
 <br>
 
